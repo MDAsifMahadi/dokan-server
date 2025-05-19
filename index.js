@@ -26,9 +26,7 @@ app.use(productRputes);
 
 
 app.get("/", (req, res)=> {
-    res.json({
-        message: "hellodsfdsfs "
-    })
+    res.send("ping")
 })
 app.listen(PORT, ()=> {
     console.log(`server is runing at http://localhost:${PORT}`)
