@@ -38,7 +38,11 @@ const productSchema = Schema({
         required : true
     },
     additionalInfo : {
-        type: String
+        type: [
+            {
+                type: String
+            }
+        ]
     }
 })
 
